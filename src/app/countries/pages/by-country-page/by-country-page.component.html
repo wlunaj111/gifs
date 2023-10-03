@@ -8,8 +8,9 @@
     <!-- Search Box -->
     <!-- <input type="text" placeholder="Buscar por capital" class="form-control"> -->
     <shared-search-box
-     (onValue)="searchByCountry($event)"
+     (onDebounce)="searchByCountry($event)"
      placeholder = "Buscar por país"
+     [initialValue]="initialValue"
      >
     </shared-search-box>
   </div>
